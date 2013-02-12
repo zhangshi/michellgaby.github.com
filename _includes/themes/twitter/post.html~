@@ -1,0 +1,47 @@
+<div class="page-header">
+  <h1>{{ page.title }} <small>Σ(°д°lll) 这货绝对是baka</small></h1>
+</div>
+
+<div class="row">
+  <div class="span8">
+    {{ content }}
+    <hr>
+    <div class="pagination">
+      <ul>
+      {% if page.previous %}
+        <li class="prev"><a href="{{ BASE_PATH }}{{ page.previous.url }}" title="{{ page.previous.title }}">&larr; 上一篇</a></li>
+      {% else %}
+        <li class="prev disabled"><a>&larr; 上一篇</a></li>
+      {% endif %}
+        <li><a href="{{ BASE_PATH }}{{ site.JB.archive_path }}">目录</a></li>
+      {% if page.next %}
+        <li class="next"><a href="{{ BASE_PATH }}{{ page.next.url }}" title="{{ page.next.title }}">下一篇 &rarr;</a></li>
+      {% else %}
+        <li class="next disabled"><a>下一篇 &rarr;</a>
+      {% endif %}
+      </ul>
+    </div>
+      <hr>
+      <section id=”comment”>
+      <h2>发表评论</h2>
+      {% include themes/twitter/duoshuo.html %}
+      </section>
+<!--
+    {% include JB/comments %}
+-->
+  </div>
+  
+  <div class="span4">
+    <h4>发布时间</h4>
+    <div class="date"><span>{{ page.date | date: "%Y年%m月%d日" }}</span></div>
+  {% unless page.tags == empty %}
+    </br>
+    </br>
+    <h4>标签</h4>
+    <ul class="tag_box">
+    {% assign tags_list = page.tags %}
+    {% include JB/tags_list %}
+    </ul>
+  {% endunless %}  
+  </div>
+</div>

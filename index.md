@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Hello World!
-tagline: Supporting tagline
+title: Michellgaby's Blog
+tagline: Σ(°д°lll) 这货绝对是baka
 ---
 {% include JB/setup %}
 

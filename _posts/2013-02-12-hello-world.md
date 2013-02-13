@@ -6,4 +6,10 @@ category:
 tags: [个人记录]
 ---
 {% include JB/setup %}
-Hello World!
+    #include <stdio.h>
+
+    int main()
+    {
+      printf("Hello World!");
+      return 0;
+    }

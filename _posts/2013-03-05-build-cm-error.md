@@ -7,12 +7,12 @@ tags: [技术交流]
 ---
 {% include JB/setup %}
 错误：  
-`使用GCC4.7编译源码时，external/srec文件夹源码会出现错误，需要打补丁。`  
+`使用GCC4.7编译源码时，external/srec文件夹源码会出现以下错误，需要打补丁。`  
 
-方法：  
-`cd external/srec`  
-`wget "https://github.com/CyanogenMod/android_external_srec/commit/6607a0a8ba8966db7f7fdb7f57928cd7fb43b4b3.diff"`  
-`patch -p1 < 6607a0a8ba8966db7f7fdb7f57928cd7fb43b4b3.diff`  
-`rm -f 6607a0a8ba8966db7f7fdb7f57928cd7fb43b4b3.diff`  
+解决方法：  
+`下载`[serc_patch.diff](files/patchsrec_patch.diff)`并把他放在external/srec目录`  
+`终端输入: cd external/srec`  
+`patch -p1 < serc_patch.diff`  
+`rm -f serc_patch.diff`  
 `cd ../..`  
 

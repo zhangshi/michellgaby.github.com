@@ -8,8 +8,7 @@ tags: [技术交流]
 {% include JB/setup %}
 错误：  
 使用GCC4.7编译源码时，external/srec文件夹源码会出现以下错误，需要打补丁.  
-`external/srec/t-ool\-s/thirdparty/OpenFst/fst/lib/cache.h:136:11: note: use ‘this->SetState’ instead`  
-`make: *** [out/host/linux-x86/obj/EXECUTABLES/grxmlcompile_intermediates/grxmlcompile.o] Error 1'`
+`external/srec/tools/thirdparty/OpenFst/fst/lib/cache.h:136:11: note: use ‘this->SetState’ instead`  
 
 解决方法：  
 下载[serc_patch.diff](https://raw.github.com/Michellgaby/michellgaby.github.com/master/files/patch/srec_patch.diff)(右键另存为)并把他放在external/srec目录  

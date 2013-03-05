@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "编译CM时出现的问题"
+title: "编译CM时出现的错误"
 description: ""
 category: 
 tags: [技术交流]

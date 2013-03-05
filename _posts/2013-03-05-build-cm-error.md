@@ -12,7 +12,7 @@ tags: [技术交流]
 `make: *** [out/host/linux-x86/obj/EXECUTABLES/grxmlcompile_intermediates/grxmlcompile.o] Error 1'`
 
 解决方法：  
-下载[serc_patch.diff](https://github.com/michellgaby.github.com/files/patch/srec_patch.diff)并把他放在external/srec目录  
+下载[serc_patch.diff](https://raw.github.com/Michellgaby/michellgaby.github.com/master/files/patch/srec_patch.diff)(右键另存为)并把他放在external/srec目录  
 终端输入:  
 `cd external/srec`  
 `patch -p1 < serc_patch.diff`  
